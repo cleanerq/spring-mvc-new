@@ -23,7 +23,7 @@ public class MyIntercepter implements HandlerInterceptor {
      */
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
 
-        System.out.println("preHandle....");
+        System.out.println("preHandle...." + request.getRequestURI());
         return true;
     }
 
